@@ -10,12 +10,19 @@ class Restaurant
   end
 
   def closing_time(time)
-    num = @opening_time[0..1].to_i + time
+    num = @opening_time.to_i + time
     "#{num}:00"
   end
 
   def add_dish(dish)
     @dishes << dish
+  end
+
+  def open_for_lunch?
+    # require "pry"; binding.pry
+    if @opening_time
+    end
+
   end
 
 
