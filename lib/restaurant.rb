@@ -28,5 +28,24 @@ class Restaurant
     end
   end
 
+  def announce_closing_time(num)
+      time = closing_time(num).to_i
+
+      am_or_pm = if time > 12
+        "PM"
+      else
+        "AM"
+      end
+
+      convert_time = if time > 12
+        time - 12
+        else
+        time
+        end
+
+
+    "#{@name} will be closing at #{convert_time}:00#{am_or_pm}"
+  end
+
 
 end
