@@ -19,10 +19,7 @@ class Restaurant
   end
 
   def open_for_lunch?
-    # require "pry"; binding.pry
-    if @opening_time
-    end
-
+    @opening_time.to_i <= 12
   end
 
 
