@@ -14,5 +14,10 @@ class Restaurant
     "#{num}:00"
   end
 
+  def add_dish(dish)
+    @dishes << dish
+
+  end
+
 
 end
