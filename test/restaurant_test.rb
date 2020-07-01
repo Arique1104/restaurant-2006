@@ -70,6 +70,7 @@ class RestaurantTest < Minitest::Test
     restaurant2.add_dish('Pizzetta')
     restaurant2.add_dish('Ravioli')
 
+    assert_equal [], restaurant1.menu_dish_names
     assert_equal ["BURRATA", "PIZZETTA", "RAVIOLI"], restaurant2.menu_dish_names
 
   end

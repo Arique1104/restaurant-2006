@@ -22,5 +22,11 @@ class Restaurant
     @opening_time.to_i <= 12
   end
 
+  def menu_dish_names
+    @dishes.map do |dish|
+      dish.upcase
+    end
+  end
+
 
 end
